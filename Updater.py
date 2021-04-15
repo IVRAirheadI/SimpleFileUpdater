@@ -30,10 +30,10 @@ if choice == "1":
     File1 = f'{PASTYBOY}' # These are whats gonna be used to make the requests
     File2 = f'{PASTYBOY2}'
     File3 = f'{PASTYBOY3}'
-    File_r = requests.get(File, allow_redirects=True)
+    File_r = requests.get(File1, allow_redirects=True) # makes the request to the given link, to then download that file
     File2_r = requests.get(File2, allow_redirects=True)
     File3_r = requests.get(File3, allow_redirects=True)
-    open('File.exe', 'wb').write(File_r.content)
+    open('File.exe', 'wb').write(File_r.content) # overwrites/downloads the file
     open('AnotherFile.json', 'wb').write(File2_r.content)
     open('MoreFile.zip', 'wb').write(File3_r.content)
     print(f'{Fore.GREEN}All Files Downloaded Successfully')
