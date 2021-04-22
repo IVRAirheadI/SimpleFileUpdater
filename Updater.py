@@ -5,7 +5,7 @@ init()
 print("\33]0; FILE | UPDATER\a")
 
 
-# Here you can add filenames with their url #
+# Easily add filenames with their url here #
 data = {
     "File.exe": {"url": "RAW PASTEBIN HERE"},
     "AnotherFile.json": {"url": "RAW PASTEBIN HERE"},
@@ -27,13 +27,14 @@ def main():
                      ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
     ''')
     print('━' * os.get_terminal_size().columns)
-    counter = 1
+    counter = 2
+    print("[1] Update/Download All Files")
     for x in data["methods"]:
         print(f"[{counter}] {x}")
         counter += 1
     print(Fore.RESET)
-    choice = input(f"Selection: ")
-    menu(int(choice))
+    choice = int(input(f"Selection: "))
+    menu(choice)
 
 
 def menu(choice):
@@ -43,7 +44,7 @@ def menu(choice):
         main()
     else:
         try:
-            choice -= 1
+            choice -= 2
             downloadFile(choice)
             main()
         except:
