@@ -7,9 +7,9 @@ print("\33]0; FILE | UPDATER\a")
 
 # Easily add filenames with their url here #
 data = {
-    "File.exe": {"url": "RAW PASTEBIN HERE"},
-    "AnotherFile.json": {"url": "RAW PASTEBIN HERE"},
-    "MoreFile.zip": {"url": "RAW PASTEBIN HERE"},
+    "File.exe": {"url": "RAW LINK HERE"},
+    "AnotherFile.json": {"url": "RAW LINK HERE"},
+    "MoreFile.zip": {"url": "RAW LINK HERE"},
     "methods": []
 }
 
